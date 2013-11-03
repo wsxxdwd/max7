@@ -10,21 +10,22 @@ h1.pos_abs
     font-weight: bold;
     position: relative;
     left: 100px;
-    top: 0px;
+    top: -30px;
 }
-body 
-{
-    background-image: url("http://www.google.com.hk/images/srpr/logo11w.png");
-    background-repeat:no-repeat;
-	background-position:center 200px;
-	background-size:18%
-}
-div#dh{background-color:rgb(45, 45, 45) ;height:29px;border:0;position:absolute;top:0px;width:100%;font-size: 13px;}
-div#input {text-align:center; margin-top:280px;margin-left:auto;margin-right:auto;color:rgb(34, 34, 34)}
+div#dh1{background-color:rgb(45, 45, 45) ;height:29px;border:0;position:absolute;top:0px;width:100%;font-size: 13px;padding-left:0px}
+div#dh2{background-color:rgb(228,228,228);height:41px;border:1px;font-size:small;padding-left:0px;position:absolute;bottom:0px;width:100%}
+div#input {text-align:center; margin-top:0px;margin-left:auto;margin-right:auto;color:rgb(34, 34, 34);}
+div#bg{margin-top:200px;margin-left:auto;margin-right:auto;min-width:269px; width:expression_r(document.body.clientWidth < 269 ? "269px": "auto" ); min-height:95px; height:expression_r(document.body.clientWidth < 95? "95px": "auto" ); }
 ul
 {
 	list-style-type:none;
-    line-height:0px
+    line-height:0px;
+
+}
+ul2
+{
+    list-style-type:none;
+    line-height:40px
 }
 li
 {
@@ -34,11 +35,12 @@ li
     border-right: 1px;
     margin:0px;
     padding:0px 5px;
-    
 }
 </style>
 </head>
 <body style="margin:0px">
+<div id="bg" style="width:269px;height:95px;background-image:url(http://www.google.com.hk/images/srpr/logo11w.png);background-repeat:no-repeat;background-size: 269px 95px">
+</div>
 <div id="input" style="width:500px">
     <h1 class="pos_abs">
     谷歌 
@@ -53,7 +55,7 @@ li
     </table>
 	<p>     <font size=3PX>Google.com.hk 使用下列语言： <a href="http://www.google.com.hk/setprefs?sig=0_7tCCdFonTW8s-I64sza74gZSd4s%3D&hl=zh-TW&source=homepage">中文（繁體)</a>          <a href="http://www.google.com.hk/setprefs?sig=0_7tCCdFonTW8s-I64sza74gZSd4s%3D&hl=en&source=homepage">English</a></font></p>
 </div>
-<div id="dh";>
+<div id="dh1";>
 <ul>
 <li><a href="#"style="text-decoration:none;color:#cccccc">+你</a></li>
 <li><a href="#"style="text-decoration:none;color:#cccccc">搜索</a></li>
@@ -64,6 +66,16 @@ li
 <li><a href="#"style="text-decoration:none;color:#cccccc">新闻</a></li>
 <li><a href="#"style="text-decoration:none;color:#cccccc">Gmail</a></li>
 </ul>
+</div>
+<div id="dh2" >
+<ul2 >    
+<li><a href="#"style="text-decoration:none;color:#666">广告</a></li>
+<li><a href="#"style="text-decoration:none;color:#666">服务</a></li>
+<li><a href="#"style="text-decoration:none;color:#666">Google大全</a></li>
+<li><a href="#"style="text-decoration:none;color:#666">新的隐私权政策和条款</a></li>
+<li><a href="#"style="text-decoration:none;color:#666">设置</a></li>
+<li><a href="#"style="text-decoration:none;color:#666">google.com</a></li>
+</ul2>
 </div>
 </body>
 </html>
